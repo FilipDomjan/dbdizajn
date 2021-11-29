@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d6b3540a82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="usluge.css">
+    <title>DB Dizajn | Usluge</title>
+</head>
+<body>
+    <nav class="navigation-top" id="nav-top">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>DBdizajn</h1>
+                </div>
+                <div class="links" id="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Usluge</a></li>
+                        <li><a href="about.html">O nama</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()"><img src="images/menu.png" alt="menu" width="30px"></a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="showcase" id="showcase">
+        <div class="container">
+            <h1>naše usluge</h1>
+            <p>Home > Usluge</p>
+        </div>
+    </div>
+
+    <!--
+    <div class="settings" id="settings">
+        <a href="#" class="back-to-top"><input type="button" class="back-to-top-btn"></a>
+        <a class="dark-mode" onclick="darkMode()"><input type="button" class="dark-mode-btn"></a>
+        <a href="#" class="light-mode"><input type="button" class="light-mode-btn"></a>
+    </div>
+    -->
+
+    <a onclick=backToTop() title="Back to top"><i id="top-btn" class="fas fa-arrow-circle-up"></i></a>
+
+    <div class="usluge">
+        <div class="container">
+            <div class="jump-to-section" id="jump-to-section">
+                <a href="#manikura" class="bordered">Manikura</a>
+                <a href="#obrve" class="bordered">Obrve</a>
+                <a href="#depilacije" class="bordered">Depilacija</a>
+                <a href="#masaze" class="bordered">Masaža</a>
+                <a href="#maderoterapija" class="bordered">Maderoterapija</a>
+                <a href="#edukacije">Edukacija</a>
+            </div>
+            <div class="btn">
+                <a href="pdfs/DBDizajn_Cijenik_PDF.pdf" target="_blank"><input type="button" value="Cijenik u PDF-u" class="cijenik-pdf-button"></a>
+            </div>
+
+            <div class="usluge-content">
+                <h1 id="manikura">TRAJNI LAK</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/crtani_french.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Crtani french</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/ombre.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Ombre</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/nail_art.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nail art/chrome, mirror, gliteri, cirkoni...</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <h1>KOREKCIJA GEL NOKTI</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/babyboomer.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Babyboomer</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/crtani_french.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Crtani french</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/gradeni_french.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Građeni french</p>
+                        <p>+50kn (5kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/nail_art_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nail art/chrome, mirror, gliteri, cirkoni...</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/nadopuna.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nadopuna na tuđi rad</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <h1>UGRADNJA GEL NOKTIJU</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/babyboomer_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Babyboomer</p>
+                        <p>+30kn (3kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/crtani_french.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Crtani french</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/gradeni_french_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Građeni french</p>
+                        <p>+50kn (5kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/nail_art_3.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nail art/chrome, mirror, gliteri, cirkoni...</p>
+                        <p>+20kn (2kn/nokat)</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/nadopuna_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nadopuna na tuđi rad</p>
+                        <p>+30kn (3kn/nokat)</p>
+                    </div>
+                </div>
+                <h1 id="obrve">OBRVE</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/browlift.png" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Browlift</p>
+                        <p>150,00kn | 200,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/cupanje_obrva.png" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Čupanje obrva</p>
+                        <p>40,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/farbanje_obrva.png" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Farbanje obrva</p>
+                        <p>20,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/lashlift.png" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Lash lift</p>
+                        <p>200,00kn | 150,00kn</p>
+                    </div>
+                </div>
+                <h1 id="depilacije">DEPILACIJE</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_nausnice.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nausnica</p>
+                        <p>35,00kn / 50,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_trbuha.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Trbuh</p>
+                        <p>45,00kn / 55,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_lica.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Lice</p>
+                        <p>60,00kn / 70,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_pazuha.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Pazuh</p>
+                        <p>55,00kn / 65,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_ruke.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Ruke</p>
+                        <p>65,00kn / 85,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_bikini.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Bikini zona</p>
+                        <p>65,00kn / 85,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_brazilska.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Brazilska depilacija</p>
+                        <p>85,00kn / 125,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_noge_parcijalno.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge parcijalno</p>
+                        <p>80,00kn / -</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_noge_full.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge</p>
+                        <p>115,00kn / 205,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_nogebikini.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge i Bikini zona</p>
+                        <p>140,00kn / 255,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_nogeparcijalni_bikinibrazilska.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge parcijalno i bikini ili brazilska</p>
+                        <p>- / 235,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_nogeparc_bikini.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge parcijalno i bikini zona</p>
+                        <p>120,00kn / -</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_nogeparc_braz.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge parcijalno i brazilska depilacija</p>
+                        <p>145,00kn / -</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_noge_braz.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Noge i brazilska depilacija</p>
+                        <p>165,00kn / 295,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_ledja.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Leđa ili prsa</p>
+                        <p>130,00kn / 175,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_tijela.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Tijelo</p>
+                        <p>290,00kn / -</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_potkoljenice.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Potkoljenice</p>
+                        <p>- / 135,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/depilacija_natkoljenice.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Natkoljenice</p>
+                        <p>- / 145,00kn</p>
+                    </div>
+                </div>
+                <h1 id="masaze">MASAŽE</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/masaza_1.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Masaža - Parcijalno</p>
+                        <p>150,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/masaza_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Masaža - Manualna</p>
+                        <p>200,00kn</p>
+                    </div>
+                </div>
+                <h1 id="maderoterapija">MADEROTERAPIJA</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_klasicna_1.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Maderoterapija klasična</p>
+                        <p>140,00kn / 170,00kn / 200,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_klasicna_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Maderoterapija klasična - 5 tretmana</p>
+                        <p>560,00kn / 680,00kn / 800,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_klasicna_3.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Maderoterapija klasična - 10 tretmana</p>
+                        <p>1120,00kn / 1360,00kn / 1600,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_brazilska_1.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Maderoterapija brazilska</p>
+                        <p>170,00kn / 200,00kn / 220,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_brazilska_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Maderoterapija brazilska - 5 tretmana</p>
+                        <p>680,00kn / 800,00kn / 880,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_brazilska_3.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Maderoterapija brazilska - 10 tretmana</p>
+                        <p>1360,00kn / 1600,00kn / 1760,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_mix_1.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Brazilska + Klasična - 5 tretmana</p>
+                        <p>630,00kn / 750,00kn / 830,00kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/maderoterapija_mix_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Brazilska + Klasična - 10 tretmana</p>
+                        <p>1240,00kn / 1630,00kn / 1680,00kn</p>
+                    </div>
+                </div>
+                <h1 id="edukacije">EDUKACIJE</h1>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_1.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Trajni lak + Suha Manikura</p>
+                        <p>800kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_2.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Akril Gel</p>
+                        <p>1500kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_3.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Usavršavanje gel tehnike</p>
+                        <p>1500kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_5.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Nail art</p>
+                        <p>600kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_4.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Bazna edukacija</p>
+                        <p>3500kn</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_6.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Individualne edukacije</p>
+                        <p>- Na upit -</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_7.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Edukacije u Vašem gradu</p>
+                        <p>- Na upit -</p>
+                    </div>
+                </div>
+                <div class="polaroid" style="background-color: white;">
+                    <img src="images/stock-image/edukacija_8.jpg" alt="manikura">
+                    <div class="polaroid-container">
+                        <p>Usavršavanje salona</p>
+                        <p>- Na upit -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h1>&copy; Copyright DB Dizajn. Sva prava pridržana.</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/domjanbranka/" target="_blank"><i id="insta" class="fa fa-instagram" style="color:rgb(71, 71, 71); font-size: 22px;"></i></a></li>
+                    <li><a href="https://www.facebook.com/DBdizajn1" target="_blank"><i id="insta" class="fa fa-facebook" style="color:rgb(71, 71, 71); font-size: 22px;"></i></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        backToTopBtn = document.getElementById("top-btn");
+
+        window.onscroll = function() {showBtn()};
+
+        function showBtn(){
+            if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+                backToTopBtn.style.right = "20px";
+            }
+            else{
+                backToTopBtn.style.right = "-100px";
+            }
+        }
+
+        function backToTop(){
+            document.body.scrollTop = 0; // Safari
+            document.documentElement.scrollTop = 0; // Chrome, FF, IE; Opera
+        }
+
+        function toggleMenu(){
+                var x = document.getElementById("links");
+                if(x.style.display === "block"){
+                    x.style.display = "none";
+                }
+                else{
+                    x.style.display = "block";
+                }
+            }
+
+        function darkMode(){
+            var setting = document.getElementById("settings").classList.toggle("dark-mode-background");
+            var bodyForeground = document.body.classList.toggle("dark-mode-foreground");
+            var bodyBackground = document.body.classList.toggle("dark-mode-body");
+            var nav = document.getElementById("nav-top").classList.toggle("dark-mode-body");
+            var jumper = document.getElementById("jump-to-section").classList.toggle("dark-mode-background");
+
+            var navLinkA = document.getElementsByTagName("A");
+            var i;
+
+            for(i = 0; i < navLinkA.length; i++){
+
+                if(navLinkA[i].style.color == "rgb(191, 191, 191)"){
+                    navLinkA[i].style.color = "#373737";
+                }
+                else{
+                    navLinkA[i].style.color = "rgb(191, 191, 191)";
+                }
+                
+            }
+
+            var showcase = document.getElementById("showcase");
+
+            if(showcase.style.backgroundImage == 'url("images/background-dark.png")'){
+                showcase.style.backgroundImage = 'url("images/background.png")';
+            }
+            else{
+                showcase.style.backgroundImage = 'url("images/background-dark.png")';
+            }
+
+            var polaroid = document.getElementsByClassName("polaroid");
+
+            for(var i = 0; i < polaroid.length; i++){
+                if(polaroid[i].style.backgroundColor == "white"){
+                    polaroid[i].style.backgroundColor = "#252525";
+                }
+                else{
+                    polaroid[i].style.backgroundColor = "white";
+                    
+                }
+            }
+
+            var polaroidText = document.getElementsByClassName("polaroid-container");
+
+            for(var i = 0; i < polaroidText.length; i++){
+                if(polaroidText[i].style.color == "rgb(191, 191, 191)"){
+                    polaroidText[i].style.color = "#373737";
+                }
+                else{
+                    polaroidText[i].style.color = "rgb(191, 191, 191)";
+                }
+            }
+
+            var uslugeTitle = document.getElementsByClassName("usluge-content");
+
+            for(var i = 0; i < uslugeTitle.length; i++){
+                if(uslugeTitle[i].style.color == "rgb(242, 242, 242)"){
+                    uslugeTitle[i].style.color = "#181818";
+                }
+                else{
+                    uslugeTitle[i].style.color = "rgb(242, 242, 242)";
+                }
+            }
+
+            var jumpBorder = document.getElementsByClassName("bordered");
+
+            if (window.screen.width > 768){
+                for(var i = 0; i < jumpBorder.length; i++){
+                    if(document.getElementsByClassName("dark-mode-body").length > 0){
+                        jumpBorder[i].style.borderRight = "1px solid rgb(73, 73, 73)";
+                    }
+                    else{
+                        jumpBorder[i].style.borderRight = "1px solid rgb(212, 212, 212)";
+                    }
+
+                    jumpBorder[i].style.borderBottom = "0px";
+                }
+            }
+            else{
+                for(var i = 0; i < jumpBorder.length; i++){
+                    if(document.getElementsByClassName("dark-mode-body").length > 0){
+                        jumpBorder[i].style.borderBottom = "1px solid rgb(73, 73, 73)";
+                    }
+                    else{
+                        jumpBorder[i].style.borderBottom = "1px solid rgb(212,212,212)";
+                    }
+                    jumpBorder[i].style.borderRight = "0px";
+                }
+            }
+
+            var jumpHover = document.getElementsByClassName("jump-to-section-dark");
+
+            if(jumpHover.length == 0){
+                var jumpHoverDark = document.getElementById("jump-to-section").classList.add("jump-to-section-dark");
+            }
+            else{
+                var jumpHoverDark = document.getElementById("jump-to-section").classList.remove("jump-to-section-dark");
+            }
+
+        }
+    </script>
+</body>
+
+
+</html>

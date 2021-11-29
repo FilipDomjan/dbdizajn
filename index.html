@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DB Dizajn je salon ljepote smješten u Bjelovaru, a pruža razne usluge za uljepšavanje">
+    <script src="https://kit.fontawesome.com/d6b3540a82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen and (min-width: 980px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="style_small.css">
+    <title>DB Dizajn | Salon za uljepšavanje, ugradnju i edukacije</title>
+</head>
+<body>
+    <nav class="navigation-top" id="nav-top">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>DBdizajn</h1>
+                </div>
+                <div class="links" id="links">
+                    <ul>
+                        <li><a href="#" id="nav-link">Home</a></li>
+                        <li><a href="usluge.html" id="nav-link">Usluge</a></li>
+                        <li><a href="about.html" id="nav-link">O nama</a></li>
+                        <li><a href="contact.html" id="nav-link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()"><img src="images/menu.png" alt="menu" width="30px"></a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--
+    <div class="settings" id="settings">
+        <a href="#" class="back-to-top"><input type="button" class="back-to-top-btn"></a>
+        <a onclick="darkMode()" class="dark-mode"><input type="button" class="dark-mode-btn"></a>
+        <a href="#" class="light-mode"><input type="button" class="light-mode-btn"></a>
+    </div>
+    -->
+
+    <a onclick=backToTop() title="Back to top"><i id="top-btn" class="fas fa-arrow-circle-up"></i></a>
+
+    <div class="services-section">
+        <div class="container">
+            <div class="services">
+                <div class="services-text">
+                    <h1>Naše usluge</h1>
+                    <p>Želite se isticati predivnom manikurom? Imate bolove u određenim dijelovima tijela te vam je potrebna masaža? Želite poboljšati svoju strukturu maderoterapijom? Provjerite usluge koje nudimo u Našem salonu DB Dizajn, možda imamo nešto baš za Vas.</p>
+                    <a href="usluge.html"><input type="button" value="USLUGE" class="usluge-button"></a>
+                </div>
+                <div class="services-image">
+                    <img src="images/stock-image/top_section.jpg" alt="img">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-grid">
+        <div class="container">
+            <div class="grid-content" id="grid" onclick="location.href='usluge.html#manikura'">
+                <div class="column" style="background-image: url('images/stock-image/grid_1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <a>Manikura</a>
+                </div>
+            </div>
+            <div class="grid-content" id="grid" onclick="location.href='usluge.html#obrve'">
+                <div class="column" style="background-image: url('images/stock-image/grid_2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <a>Obrve</a>
+                </div>
+            </div>
+            <div class="grid-content" id="grid" onclick="location.href='usluge.html#depilacije'">
+                <div class="column" style="background-image: url('images/stock-image/grid_3.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <a>Depilacija</a>
+                </div>
+            </div>
+            <div class="grid-content" id="grid" onclick="location.href='usluge.html#masaze'">
+                <div class="column" style="background-image: url('images/stock-image/grid_4.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <a>Masaža</a>
+                </div>
+            </div>
+            <div class="grid-content" id="grid" onclick="location.href='usluge.html#maderoterapija'">
+                <div class="column" style="background-image: url('images/stock-image/grid_5.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <a>Maderoterapija</a>
+                </div>
+            </div>
+            <div class="grid-content" id="grid" onclick="location.href='usluge.html#edukacije'">
+                <div class="column" style="background-image: url('images/stock-image/grid_6.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                    <a>Edukacije</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slogan-section" id="slogan">
+        <div class="container">
+            <div class="slogan-text">
+                <h1>Budite ponosni,<br>budite svoji.</h1>
+                <p>Vrlo je važno voditi brigu o sebi i svojem tijelu. U našem salonu nudimo raznoliki spektar usluga koje Vam mogu pomoći da budete najbolja verzija sebe, te sebi poklonite ljepotu i zdravlje.</p>
+            </div>
+            <div class="slogan-image">
+                <img src="images/nail-polish.png" alt="nail-polish">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="our-services">
+        <div class="container">
+            <div class="our-services-content">
+                <h1>Naše usluge</h1>
+                <ul>
+                    <a onclick="manikura()"><li>Manikura</li></a>
+                    <a onclick="pedikura()"><li>Pedikura</li></a>
+                    <a onclick="obrve()"><li>Obrve</li></a>
+                    <a onclick="depilacija()"><li>Depilacija</li></a>
+                    <a onclick="masaza()"><li>Masaža</li></a>
+                    <a onclick="maderoterapija()"><li>Maderoterapija</li></a>
+                    <a onclick="edukacija()"><li>Edukacija</li></a>
+                </ul>
+                <hr>
+                <div class="our-services-content-print">
+                    <img id="osc-img" src="images/stock-image/manikura_bottom.jpg" alt="manikura">
+                    <h1 id="osc-title">Manikura</h1>
+                    <p id="osc-paragraph">U Našem salonu rade samo najbolji stručnjaci koji će se pobrinuti da Vašim noktima poklonimo sjaj kakav zaslužuju, koristeći se metodama kao što su Nail Art, Babyboomer, Akril gel. Što god želite, naši stručnjaci će se pobrinuti da budete zadovoljni svojim izborom.</p>
+                    <div class="clear"></div>
+                </div width="100%">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact-us">
+        <div class="container">
+            <div class="contact-us-content">
+                <p>Ukoliko se želite opustiti u prijateljskoj atmosferi našeg salona, te istovremeno steći uslugu visoke kvalitete, pozivom na broj dogovorite termin i posjetite nas u Bjelovaru. Veselimo se Vašem dolasku.</p>
+                <button>KONTAKTIRAJTE NAS 098/934-2955</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h1>&copy; Copyright DB Dizajn. Sva prava pridržana.</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/domjanbranka/" target="_blank"><i id="insta" class="fa fa-instagram" style="color:rgb(71, 71, 71); font-size: 22px;"></i></a></li>
+                    <li><a href="https://www.facebook.com/DBdizajn1" target="_blank"><i id="insta" class="fa fa-facebook" style="color:rgb(71, 71, 71); font-size: 22px;"></i></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        backToTopBtn = document.getElementById("top-btn");
+
+        window.onscroll = function() {showBtn()};
+
+        function showBtn(){
+            if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+                backToTopBtn.style.right = "20px";
+            }
+            else{
+                backToTopBtn.style.right = "-100px";
+            }
+        }
+
+        function backToTop(){
+            document.body.scrollTop = 0; // Safari
+            document.documentElement.scrollTop = 0; // Chrome, FF, IE; Opera
+        }
+
+
+        function toggleMenu(){
+            var x = document.getElementById("links");
+            if(x.style.display === "block"){
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+        }
+
+
+        function darkMode(){
+            var setting = document.getElementById("settings").classList.toggle("dark-mode-background");
+            var bodyForeground = document.body.classList.toggle("dark-mode-foreground");
+            var bodyBackground = document.body.classList.toggle("dark-mode-body");
+            var nav = document.getElementById("nav-top").classList.toggle("dark-mode-body");
+            var slogan = document.getElementById("slogan").classList.toggle("dark-mode-slogan");
+            
+            var navLinkA = document.getElementsByTagName("A");
+            var i;
+
+            for(i = 0; i < navLinkA.length; i++){
+
+                if(navLinkA[i].style.color == "rgb(228, 228, 228)"){
+                    navLinkA[i].style.color = "#373737";
+                }
+                else{
+                    navLinkA[i].style.color = "rgb(228, 228, 228)";
+                }
+                
+            }
+
+            var gridLink = document.getElementById("grid");
+            var gridLinkA = gridLink.getElementsByTagName("A");
+            var gridLinkH1 = gridLink.getElementsByTagName("H1");
+
+            for(i = 0; i < gridLinkA.length; i++){
+                gridLinkA[i].style.color = "white";
+            }
+            
+
+            var contactBackground = document.getElementById('contact-us');
+
+            if(contactBackground.style.backgroundImage == 'url("images/background-dark.png")')
+            {
+                contactBackground.style.backgroundImage = "url('images/background.png')";
+            }
+            else{
+                contactBackground.style.backgroundImage = "url('images/background-dark.png')";
+            }
+
+        }
+
+        function manikura(){
+            document.getElementById("osc-title").innerHTML = "Manikura";
+            document.getElementById("osc-paragraph").innerHTML = "U Našem salonu rade samo najbolji stručnjaci koji će se pobrinuti da Vašim noktima poklonimo sjaj kakav zaslužuju, koristeći se metodama kao što su Nail Art, Babyboomer, Akril gel. Što god želite, naši stručnjaci će se pobrinuti da budete zadovoljni svojim izborom.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/manikura_bottom.jpg";
+            return false;
+        }
+
+        function pedikura(){
+            document.getElementById("osc-title").innerHTML = "Pedikura";
+            document.getElementById("osc-paragraph").innerHTML = "Pedikura je najbolji način da odmorite svoje noge, te si olakšate daljnje kretanje. Našim uslugama pedikure možemo pomladiti Vaše noge odstranjivanjem tvrde kože, te pružiti ljepotu i sjaj uslugama kao što su Nail Art, Babyboomer i drugi.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/pedikura_bottom.jpg";
+            return false;
+        }
+
+        function obrve(){
+            document.getElementById("osc-title").innerHTML = "Obrve";
+            document.getElementById("osc-paragraph").innerHTML = "Obrve su bitan dio svakog lica, te je bitno da se o njima svakodnevno brinemo. Našim uslugama uređenja obrva ponuditi ćemo Vašem licu pažnju kakvu zaslužuje.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/obrve_bottom.jpg";
+            return false;
+        }
+
+        function depilacija(){
+            document.getElementById("osc-title").innerHTML = "Depilacija";
+            document.getElementById("osc-paragraph").innerHTML = "Vrlo je bitno voditi brigu o dlačicama na našem tijelu, a danas vrlo popularna depilacija osigurava da Vaše tijelo ostane privlačno zauvijek. Našim uslugama depilacije pobrinuti ćemo se da bezbolno uklonimo neželjene dlačice s Vašeg tijela.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/depilacija_bottom.png";
+            return false;
+        }
+
+        function masaza(){
+            document.getElementById("osc-title").innerHTML = "Masaža";
+            document.getElementById("osc-paragraph").innerHTML = "Imate bolove u tijelu nakon napornog dana? Terapija masaže opušta mišićno tkivo, koje umanjuje bolne kontrakcije i grčeve. Stručnjaci u DB Dizajnu pobrinuti će se da se ponovno osjećato živo i bezbolno, sve u vrlo opuštajućoj i prijateljskoj atmosferi.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/masaza_bottom.jpg";
+            return false;
+        }
+
+        function maderoterapija(){
+            document.getElementById("osc-title").innerHTML = "Maderoterapija";
+            document.getElementById("osc-paragraph").innerHTML = "Maderoterapija aplicira tehnike masaže uz korištenje različitih drvenih alata različitih veličina i oblika. Samo najbolji alati za maderoterapiju su u rukama naših stručnjaka koji će se pobrinuti da oblikuju Vaše tijelo baš onako kako želite.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/madero_bottom.jpg";
+            return false;
+        }
+
+        function edukacija(){
+            document.getElementById("osc-title").innerHTML = "Edukacija";
+            document.getElementById("osc-paragraph").innerHTML = "Želite i Vi postati stručnjakom u području ljepote i zdravlja? Za Vas nudimo različite edukacije koje će Vas uz pomoć naših edukatora voditi korak po korak kroz sve što trebate znati za odabranu struku. Na edukacijama atmosfera je prijateljska i opuštena, bez grčeva. Na kraju edukacije dobiti ćete diplomu za uspiješno završen tečaj.";
+            var img = document.getElementById("osc-img");
+            img.src = "images/stock-image/edukacija_bottom.jpg";
+            return false;
+        }
+    </script>
+</body>
+</html>

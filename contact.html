@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d6b3540a82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <title>DB Dizajn | Kontakt</title>
+</head>
+<body>
+    <nav class="navigation-top" id="nav-top">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>DBdizajn</h1>
+                </div>
+                <div class="links" id="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="usluge.html">Usluge</a></li>
+                        <li><a href="about.html">O nama</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()"><img src="images/menu.png" alt="menu" width="30px"></a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--
+    <div class="settings" id="settings">
+        <a href="#" class="back-to-top"><input type="button" class="back-to-top-btn"></a>
+        <a class="dark-mode" onclick="darkMode()"><input type="button" class="dark-mode-btn"></a>
+        <a href="#" class="light-mode"><input type="button" class="light-mode-btn"></a>
+    </div>
+    -->
+
+    <a onclick=backToTop() title="Back to top"><i id="top-btn" class="fas fa-arrow-circle-up"></i></a>
+
+    <div class="showcase" id="showcase">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Home > Kontakt</p>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="container">
+            <div class="contact-content">
+                <h1>Kontakt</h1>
+                <hr>
+                <p>DB Dizajn</p>
+                <p>Trg hrvatskih branitelja 22</p>
+                <p>43000 Bjelovar</p>
+                <p>Tel: 098/934-2955</p>
+                <p>E-Mail: branka.domjan@yahoo.com</p>
+                <hr>
+                <p>Radno vrijeme:</p>
+                <p>Ponedjeljak - Petak: 09-20h</p>
+                <p>Subota - Nedjelja: Ne radimo</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h1>&copy; Copyright DB Dizajn. Sva prava pridržana.</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/domjanbranka/" target="_blank"><i id="insta" class="fa fa-instagram" style="color:rgb(71, 71, 71); font-size: 22px;"></i></a></li>
+                    <li><a href="https://www.facebook.com/DBdizajn1" target="_blank"><i id="insta" class="fa fa-facebook" style="color:rgb(71, 71, 71); font-size: 22px;"></i></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        backToTopBtn = document.getElementById("top-btn");
+
+        window.onscroll = function() {showBtn()};
+
+        function showBtn(){
+            if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+                backToTopBtn.style.right = "20px";
+            }
+            else{
+                backToTopBtn.style.right = "-100px";
+            }
+        }
+
+        function backToTop(){
+            document.body.scrollTop = 0; // Safari
+            document.documentElement.scrollTop = 0; // Chrome, FF, IE; Opera
+        }
+
+        function toggleMenu(){
+            var x = document.getElementById("links");
+            if(x.style.display === "block"){
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+        }
+
+        function darkMode(){
+            var setting = document.getElementById("settings").classList.toggle("dark-mode-background");
+            var bodyForeground = document.body.classList.toggle("dark-mode-foreground");
+            var bodyBackground = document.body.classList.toggle("dark-mode-body");
+            var nav = document.getElementById("nav-top").classList.toggle("dark-mode-body");
+
+            var navLinkA = document.getElementsByTagName("A");
+            var i;
+
+            for(i = 0; i < navLinkA.length; i++){
+
+                if(navLinkA[i].style.color == "rgb(191, 191, 191)"){
+                    navLinkA[i].style.color = "#373737";
+                }
+                else{
+                    navLinkA[i].style.color = "rgb(191, 191, 191)";
+                }
+                
+            }
+
+            var showcase = document.getElementById("showcase");
+
+            if(showcase.style.backgroundImage == 'url("images/background-dark.png")'){
+                showcase.style.backgroundImage = 'url("images/background.png")';
+            }
+            else{
+                showcase.style.backgroundImage = 'url("images/background-dark.png")';
+            }
+        }
+    </script>
+</body>
+</html>
